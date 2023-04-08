@@ -23,10 +23,10 @@ def LogDiff(x):
     x_diff = x_diff.dropna()
     return x_diff
     
-data = pd.DataFrame({'ret_sandp' : LogDiff(data['SandP']),
+data = pd.DataFrame({'ret_sandp' : LogDiff(data['SANDP']),
                     'ret_ford' : LogDiff(data['FORD']),
                     'USTB3M' : data['USTB3M']/12,
-                    'ersandp' : LogDiff(data['SandP']) - data['USTB3M']/12,
+                    'ersandp' : LogDiff(data['SANDP']) - data['USTB3M']/12,
                     'erford' : LogDiff(data['FORD']) - data['USTB3M']/12})
 data.head()
 
