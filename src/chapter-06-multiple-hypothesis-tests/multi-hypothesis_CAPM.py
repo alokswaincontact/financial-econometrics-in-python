@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD'                     '/QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'capm.xls', index_col=0)
 
 def LogDiff(x):

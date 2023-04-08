@@ -8,7 +8,7 @@ import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 from arch.unitroot import DFGLS
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD'                 '/QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'SandPhedge.xls', index_col=0)
 
 data['lspot'] = data['Spot'].apply(lambda x : np.log(x)) 
@@ -80,7 +80,7 @@ print(results.summary())
 
 from statsmodels.tsa.vector_ar import vecm
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'FRED.xls', index_col=0)
 
 

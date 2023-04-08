@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 with open(abspath + 'currencies.pickle', 'rb') as handle:
     data = pickle.load(handle)
 

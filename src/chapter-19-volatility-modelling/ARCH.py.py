@@ -8,7 +8,7 @@ from statsmodels.stats.diagnostic import het_arch
 from statsmodels.compat import lzip
 import statsmodels.api as sm
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 with open(abspath + 'currencies.pickle', 'rb') as handle:
     data = pickle.load(handle)
 

@@ -8,7 +8,7 @@ import numpy as np
 import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD'                 '/QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'capm.xls', index_col=0)
 
 data.head()

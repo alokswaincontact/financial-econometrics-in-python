@@ -8,7 +8,7 @@ import statsmodels.tsa.api as smt
 import pickle
 import matplotlib.pyplot as plt
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 
 data = pd.read_excel(abspath + 'currencies.xls',index_col=[0])
 

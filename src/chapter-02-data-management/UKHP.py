@@ -6,7 +6,7 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_excel('C:/Users/tao24/Desktop/UKHP.xls', index_col=0)
+data = pd.read_excel('../../data/UKHP.xls', index_col=0)
 data.head()
 
 
@@ -82,7 +82,7 @@ plt.show()
 # In[9]:
 
 
-data.to_excel('C:/Users/tao24/Desktop/UKHP_workfile.xls')
+data.to_excel('../../data/UKHP_workfile.xls')
 
 
 # In[10]:
@@ -90,14 +90,14 @@ data.to_excel('C:/Users/tao24/Desktop/UKHP_workfile.xls')
 
 import pickle
 
-with open('C:/Users/tao24/Desktop/UKHP.pickle', 'wb') as handle:
+with open('../../data/UKHP.pickle', 'wb') as handle:
     pickle.dump(data, handle)
 
 
 # In[11]:
 
 
-with open('C:/Users/tao24/Desktop/UKHP.pickle', 'rb') as handle:
+with open('../../data/UKHP.pickle', 'rb') as handle:
     data = pickle.load(handle)
 
 

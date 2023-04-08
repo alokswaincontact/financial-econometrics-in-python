@@ -8,8 +8,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 import numpy as np
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'   
-                  'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'UKHP.xls',index_col=[0])
 
 data['dhp'] = data['Average House Price'].transform(lambda x : (x - x.shift(1))/x.shift(1)*100)

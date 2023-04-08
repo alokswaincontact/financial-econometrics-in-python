@@ -8,8 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 from scipy.stats import norm 
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'  
-                   'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'sp500_daily.xlsx',index_col=[0])
 
 def LogDiff(x):

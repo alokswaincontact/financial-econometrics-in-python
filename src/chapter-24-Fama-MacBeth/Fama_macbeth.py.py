@@ -6,7 +6,7 @@ import pandas as pd
 import statsmodels.api as sm
 import numpy as np
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data1 = pd.read_csv(abspath + 'monthlyfactors.csv',index_col=[0])
 data2 = pd.read_csv(abspath + 'vw_sizebm_25groups.csv',index_col=[0])
 

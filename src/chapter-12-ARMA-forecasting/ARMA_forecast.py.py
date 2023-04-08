@@ -9,7 +9,7 @@ from sklearn.metrics import mean_squared_error
 from math import sqrt
 import matplotlib.pyplot as plt
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 with open(abspath + 'UKHP.pickle', 'rb') as handle:
     data = pickle.load(handle)
 

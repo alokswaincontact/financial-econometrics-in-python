@@ -8,7 +8,7 @@ import statsmodels.stats.api as sms
 import matplotlib.pyplot as plt
 from statsmodels.compat import lzip
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 with open(abspath + 'macro.pickle', 'rb') as handle:
     data = pickle.load(handle)
 

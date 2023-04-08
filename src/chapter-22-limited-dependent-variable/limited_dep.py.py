@@ -6,8 +6,7 @@ import pandas as pd
 import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'   
-                  'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'MSc_fail.xls')
 
 data = data.rename(columns={'Work Experience':'WorkExperience',

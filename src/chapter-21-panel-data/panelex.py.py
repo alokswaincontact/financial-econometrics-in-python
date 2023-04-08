@@ -5,7 +5,7 @@
 import pandas as pd
 from linearmodels import PooledOLS, PanelOLS, RandomEffects
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
 data = pd.read_excel(abspath + 'panelx.xls')
 
 # Note: can not use 'return' as a variable name as it is one of 

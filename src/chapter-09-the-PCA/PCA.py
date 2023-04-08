@@ -6,7 +6,7 @@ from numpy import mean,cov,cumsum,dot,linalg,std,sort
 import pandas as pd
 import matplotlib.pyplot as plt
 
-abspath = 'C:/Users/tao24/OneDrive - University of Reading/PhD/'                     'QMF Book/book Ran/data files new/Book4e_data/'
+abspath = '../../data/'
     
 data = pd.read_excel(abspath + 'FRED.xls', index_col=0)
 
