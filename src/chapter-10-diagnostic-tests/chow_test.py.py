@@ -69,7 +69,7 @@ formula = 'ermsoft ~ ersandp + dprod + dcredit +                      dinflation
 results = smf.ols(formula, data).fit()
 
 name = ['test statistic', 'pval', 'crit']
-test = sms.breaks_cusumolsresid(olsresidual = results.resid,                                ddof = results.df_model)
+test = sms.breaks_cusumolsresid(results.resid, ddof = results.df_model)
 lzip(name, test)
 
 
